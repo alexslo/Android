@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    android:scrollbars="vertical"
+    android:tileMode="repeat"
+    android:id="@+id/about_us">
+    <TextView
+        style="@style/Name_Text_Style"
+        android:id="@id/textview1"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/applogo"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="@string/app_name"
+        />
+
+
+            <TextView
+                style="@style/Text_Style_value"
+                android:text="@string/feedback"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:gravity="center"/>
+
+        <TextView
+            style="@style/text_description"
+            android:text="@string/feedback_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:gravity="center"/>
+
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/text_form"
+            android:text="@string/you_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_column="0" />
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/hint_you_name"
+                android:background="@drawable/form_style"
+                android:ems="10"
+                android:id="@+id/editTextName"
+            android:layout_column="1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+                style="@style/text_form"
+                android:text="@string/you_email"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:gravity="left"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/hint_you_email"
+                android:background="@drawable/form_style"
+                android:ems="10"
+                android:id="@+id/editTextMail" />
+    </TableRow>
+    <TextView
+        style="@style/text_form"
+        android:text="@string/form_mess"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="313dp"
+        android:layout_height="160dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:lines="9"
+        android:hint="@string/form_mess"
+        android:id="@+id/editTextMessage"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/form_style"
+        android:textStyle="italic" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            style="@style/copyright"
+            android:text="@string/copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Отправить"
+            android:id="@+id/sendButton"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+<!--
+<ScrollView
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:id="@+id/scrollView_2">
+</ScrollView>
+    -->

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Camera Benchmark</string>
+    <string name="results">Результаты</string>
+    <string name="about_the_program">О программе</string>
+    <string name="go_testing">Тестирование</string>
+    <string name="static_test">Статическое</string>
+    <string name="dinanic_test">Динамическое</string>
+    <string name="go_out">Выход</string>
+    <string name="text_test_back_cam">Ваша основная камера набрала:</string>
+    <string name="text_test_front_cam">Ваша фронтальная камера набрала:</string>
+    <string name="description">Приложение оценит технические характеристики вашей камеры.</string>
+    <string name="action_settings">act</string>
+    <string name="feedback">Обратная связь</string>
+    <string name="feedback_description">Если вы желаете отправить письмо авторам приложения, включите интернет на гаджете и заполните данную форму.</string>
+    <string name="you_name">Имя:</string>
+    <string name="you_email">E-mail:</string>
+    <string name="form_mess">Сообщение:</string>
+    <string name="hint_you_name">Введите ваше имя</string>
+    <string name="hint_you_email">Введите ваш e-mail</string>
+    <string name="hint_form_mess">Введите сообщение</string>
+    <string name="copyright">Copyright © 2014 Camera Benchmark. Все права защищены.</string>
+    <string name="Send">New Button</string>
+
+</resources>

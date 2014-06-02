@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_testing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/backg"
+        android:scrollbars="vertical"
+        android:tileMode="repeat"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/back_text"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:text="@string/description"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/Name_Text_Style"
+        android:id="@id/textview1"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/applogo"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="@string/app_name"
+        />
+
+    <!-- android:id="@+id/textView"-->
+    <LinearLayout
+        android:orientation = "horizontal"
+        android:layout_width = "fill_parent"
+        android:layout_height = "175dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginTop="70dp">
+        <Button
+            android:id="@+id/button_static"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_rewrite_1"
+            android:text="@string/static_test"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            />
+        <!-- android:onClick="onClick"-->
+    </LinearLayout>
+    <LinearLayout
+        android:orientation = "horizontal"
+        android:layout_width = "fill_parent"
+        android:layout_height = "120dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginTop="70dp">
+        <Button
+            android:id="@+id/button_dynamic"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_rewrite_1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/dinanic_test"/>
+    </LinearLayout>
+    <TextView
+        style="@style/Text_Style"
+        android:id="@id/textview1"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="@string/text_test_back_cam"
+        />
+
+    <!--Сюда пишем Баллы задней камеры-->
+
+    <LinearLayout
+        style="@style/vb"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="240dp">
+        <!-- android:background="#ffe0fff6"-->
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView" >
+
+            <TextView
+                style="@style/Text_Style_value"
+                android:id="@id/value_back_camera"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:gravity="center"/>
+        </ScrollView>
+    </LinearLayout>
+
+    <TextView
+        style="@style/Text_Style"
+        android:id="@id/textview1"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="@string/text_test_front_cam"/>
+
+    <!--Сюда пишем Баллы передней камеры-->
+    <LinearLayout
+        style="@style/vb"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="140dp">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView_2">
+
+            <TextView
+                style="@style/Text_Style_value"
+                android:id="@id/value_front_camera"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:gravity="center"/>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

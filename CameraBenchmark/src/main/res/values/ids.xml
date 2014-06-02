@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textview1" type="id">test</item>
+    <item name="value_back_camera" type="id">test</item>
+    <item name="value_front_camera" type="id">value_front_camera</item>
+</resources>
